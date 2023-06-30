@@ -1,0 +1,11 @@
+F:\Data\Me\Code\ImageCopier\Code\ImageCopier\bin\Debug\ImageCopier.exe.config
+F:\Data\Me\Code\ImageCopier\Code\ImageCopier\bin\Debug\ImageCopier.exe
+F:\Data\Me\Code\ImageCopier\Code\ImageCopier\bin\Debug\ImageCopier.pdb
+F:\Data\Me\Code\ImageCopier\Code\ImageCopier\obj\Debug\ImageCopier.csproj.AssemblyReference.cache
+F:\Data\Me\Code\ImageCopier\Code\ImageCopier\obj\Debug\ImageCopier.csproj.SuggestedBindingRedirects.cache
+F:\Data\Me\Code\ImageCopier\Code\ImageCopier\obj\Debug\ImageCopier.mainForm.resources
+F:\Data\Me\Code\ImageCopier\Code\ImageCopier\obj\Debug\ImageCopier.Properties.Resources.resources
+F:\Data\Me\Code\ImageCopier\Code\ImageCopier\obj\Debug\ImageCopier.csproj.GenerateResource.cache
+F:\Data\Me\Code\ImageCopier\Code\ImageCopier\obj\Debug\ImageCopier.csproj.CoreCompileInputs.cache
+F:\Data\Me\Code\ImageCopier\Code\ImageCopier\obj\Debug\ImageCopier.exe
+F:\Data\Me\Code\ImageCopier\Code\ImageCopier\obj\Debug\ImageCopier.pdb
