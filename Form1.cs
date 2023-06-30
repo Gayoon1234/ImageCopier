@@ -80,10 +80,13 @@ namespace ImageCopier
         }
 
         private string[] findImages(string directoryPath) {
-            string[] imageExtensions = { ".jpg", ".jpeg", ".png", ".gif" };
 
-            string[] imageFilePaths = Directory.GetFiles(directoryPath, "*", SearchOption.AllDirectories);
-            imageFilePaths = Array.FindAll(imageFilePaths, path => IsImageFile(path, imageExtensions));
+            string[] searchPatterns = { "*.jpg", "*.jpeg", "*.png" }; // Modify the search patterns as per your requirements
+
+            string[] imageFilePaths = searchPatterns.SelectMany(pattern => Directory.EnumerateFiles(directoryPath, pattern, SearchOption.AllDirectories)).ToArray();
+            //string[] imageExtensions = { ".jpg", ".jpeg", ".png", ".gif" };
+            //string[] imageFilePaths = Directory.GetFiles(directoryPath, "*", SearchOption.AllDirectories);
+            //imageFilePaths = Array.FindAll(imageFilePaths, path => IsImageFile(path, imageExtensions));
 
             return imageFilePaths;
         }
