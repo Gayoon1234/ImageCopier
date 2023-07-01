@@ -79,23 +79,13 @@ namespace ImageCopier
             }
         }
 
-        private string[] findImages(string directoryPath) {
-
-            string[] searchPatterns = { "*.jpg", "*.jpeg", "*.png" }; // Modify the search patterns as per your requirements
-
+        private string[] findImages(string directoryPath)
+        {
+            string[] searchPatterns = { "*.jpg", "*.jpeg", "*.png" };
             string[] imageFilePaths = searchPatterns.SelectMany(pattern => Directory.EnumerateFiles(directoryPath, pattern, SearchOption.AllDirectories)).ToArray();
-            //string[] imageExtensions = { ".jpg", ".jpeg", ".png", ".gif" };
-            //string[] imageFilePaths = Directory.GetFiles(directoryPath, "*", SearchOption.AllDirectories);
-            //imageFilePaths = Array.FindAll(imageFilePaths, path => IsImageFile(path, imageExtensions));
-
             return imageFilePaths;
         }
 
-        private static bool IsImageFile(string filePath, string[] imageExtensions)
-        {
-            string extension = Path.GetExtension(filePath);
-            return Array.Exists(imageExtensions, ext => ext.Equals(extension, StringComparison.OrdinalIgnoreCase));
-        }
         private void setImageTo(int i) {
             pbImage.ImageLocation = images[i];
             lblImageName.Text = Path.GetFileName(images[i]);
