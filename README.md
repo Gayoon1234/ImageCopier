@@ -7,5 +7,6 @@
 2. Enter From and To, these are the directories that you are copying from and copying to.
  ![Entering directories](./images/Step1.png)
 3. Select Load button.
-4. Use buttons or arrow keys to navigate images. The middle button or space bar is used to copy the image to the "To" directory. ![LoadedImages](./images/Step2.png)
+4. Use buttons or arrow keys to navigate images. The middle button or space bar is used to copy the image to the "To" directory.
+ ![LoadedImages](./images/Step2.png)
 
