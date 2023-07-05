@@ -88,7 +88,15 @@ namespace ImageCopier
 
         private void setImageTo(int i) {
             pbImage.ImageLocation = images[i];
-            lblImageName.Text = Path.GetFileName(images[i]);
+            try
+            {
+                lblImageName.Text = Path.GetFileName(images[i]);
+
+            }
+            catch (IndexOutOfRangeException)
+            {
+                MessageBox.Show("There are no images in the From Directory or invalid index");
+            }
             tbImageNum.Text = (i+1).ToString();
             index = i;
         }
